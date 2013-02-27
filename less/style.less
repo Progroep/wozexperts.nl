@@ -48,10 +48,6 @@ p{
   line-height: 1.6em;
 }
 
-strong{
-  color: @purple;
-}
-
 .page-header{
   margin-bottom: 25px;
 }
@@ -60,6 +56,9 @@ section{
 
 }
 
+h1, h2, h3{
+  letter-spacing: -1.5px;
+}
 
 h2{
   font-size: 2.2em;
@@ -77,8 +76,8 @@ h4{
 }
 
 .navbar .brand{
-  max-width: 150px;
-  padding: 20px 20px 0;
+  max-width: 220px;
+  padding: 8px 20px 0;
 }
 
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
@@ -86,7 +85,7 @@ h4{
 }
 
 .navbar .nav{
-  padding-top: 30px;
+  padding-top: 8px;
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
@@ -94,7 +93,8 @@ h4{
 }
 
 .navbar .nav > li > a {
-  font-size: 0.8em;
+  font-size: 0.7em;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
 }
 
 header{
@@ -105,14 +105,6 @@ header{
     z-index: 2;
     position: relative;
   }
-    h1{
-    color: @purple;
-    text-shadow: none;
-    }
-    h2{
-      color: @linkColor;
-      text-shadow: none;
-    }
 }
 
 .scroll-hint{
@@ -128,13 +120,13 @@ header{
 
 .slide {
   height: auto;
-  min-height: 100%;
+  min-height: 65%;
   width: 100%;
   position: relative;
   overflow: hidden;
   background-attachment: fixed;
   .container{
-    padding: 3% 0 5%;
+    padding: 3% 0;
   }
 }
 
@@ -144,14 +136,26 @@ header{
 ----------------------------------------*/
 
 .header{
-  background: url("../img/header.jpg") no-repeat top center;
+  background: url("http://1.s3.envato.com/files/3212103/Smiling_cute_business_woman_with_colleagues_at_the_back.jpg") no-repeat center center;
   background-size: cover;
+  min-height: 75%;
   background-attachment: fixed;
+  .span6{
+    padding: 8% 0;
+  }
   h1{
-    padding-top: 40%;
+    color: @blue;
+    padding: 3% 0 1%;
+    font-size: 3.2em;
     text-shadow: 0 0 35px rgba(0,0,0,0.03);
   }
-}
+  h3{
+    color: #657A8B;
+    padding: 8px;
+    text-align: center;
+  }
+  }
+
 
 .pattern-overlay{
   width: 100%;
@@ -185,18 +189,22 @@ header{
   }
 } 
 
+
 .geld-verdienen{
-  background: url("http://nest.com/images/living_with_nest/day_30_background-5683c224.jpg") no-repeat center center;
-  background-size: cover;
+  min-height: 0;
+  background: #E5ECF2;
   background-attachment: fixed;
+  padding: 0;
+  .container{
+    padding: 2.5% 0;
+  }
   h1{
-    font-size: 3em;
-    color: #fff;
-    padding-top: 6%;
+    font-size: 2em;
+    padding: 0;
     position: relative;
   }
-  h2{
-    color: #fff;
+  h4{
+    color: #657A8B;
   }
   strong{
     font-weight: 300;
@@ -215,113 +223,34 @@ header{
 
 
 #slide4{
-  h1{
-    color: @purple;
-  }
-  .span3{
-    position: relative;
-  }
-
-.icon-block{
-  position: relative;
-  padding: 1em;
-  margin: 20px 0;
-  i{
-    font-size: 5em;
-    display: block;
-    height: 100%;
-    padding: 50px 0;
-    width: 100%;
-    position: relative;
-    top: -200px;
-    .opacity(0);
-    -webkit-transition: 0.1s ease all;
-      -moz-transition: 0.1s ease all;
-      -o-transition: 0.1s ease all;
-      -ms-transition: 0.1s ease all;
-      transition: 0.1s ease all;
-    &:hover{
-      -webkit-transition: 0.1s ease all;
-      -moz-transition: 0.1s ease all;
-      -o-transition: 0.1s ease all;
-      -ms-transition: 0.1s ease all;
-      transition: 0.1s ease all;
-    }
-    &.visible{
-      top: 0;
-      .opacity(100);
-      -webkit-transform:rotate(360deg);
-      -moz-transform:rotate(360deg);
-      -o-transform:rotate(360deg);
-      -ms-transform:rotate(360deg);
-      transform:rotate(360deg);
-      -webkit-transition: 0.5s ease all;
-      -moz-transition: 0.5s ease all;
-      -o-transition: 0.5s ease all;
-      -ms-transition: 0.5s ease all;
-      transition: 0.5s ease all;
-    }
-    &.icon-leaf{
-      color: @green;
-      &:hover{
-        background: @green;
-        color: @white;
-      }
-      &.visible{
-      -webkit-transition-delay: 0.2s;
-        -moz-transition-delay: 0.2s;
-        -o-transition-delay: 0.2s;
-        -ms-transition-delay: 0.2s;
-        transition-delay: 0.2s;
-      }
-    }
-    &.icon-phone{
-      color: @blueDark;
-       &:hover{
-        background: @blueDark;
-        color: @white;
-      }
-      &.visible{
-       -webkit-transition-delay: 0.4s;
-        -moz-transition-delay: 0.4s;
-        -o-transition-delay: 0.4s;
-        -ms-transition-delay: 0.4s;
-        transition-delay: 0.4s;
-      }
-    }
-    &.icon-rss{
-      color: @orange;
-       &:hover{
-        background: @orange;
-        color: @white;
-      }
-      &.visible{
-       -webkit-transition-delay: 0.6s;
-        -moz-transition-delay: 0.6s;
-        -o-transition-delay: 0.6s;
-        -ms-transition-delay: 0.6s;
-        transition-delay: 0.6s;
-      }
-    }
-    &.icon-briefcase{
-      color: @pink;
-       &:hover{
-        background: @pink;
-        color: @white;
-      }
-      &.visible{
-       -webkit-transition-delay: 0.8s;
-        -moz-transition-delay: 0.8s;
-        -o-transition-delay: 0.8s;
-        -ms-transition-delay: 0.8s;
-        transition-delay: 0.8s;
-      }
-    }
-  }
-}
-
   
+  background-size: cover;
+  .span3{
+    margin-top: 15%;
+  }
+  .icon-big{
+    font-size: 7em;
+    color: #A7B7C8;
+  }
+  .span8{
+    font-size: 0.85em;
+  }
 }
+
+#aanmelden{
+  background: url("http://1.s3.envato.com/files/3212103/Smiling_cute_business_woman_with_colleagues_at_the_back.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  .well{
+    background: @white;
+    color: #657A8B;
+    margin-top: 20%;
+    h3{
+      color: #657A8B;
+    }
+  }
+}
+
 // Icon animation keyframes
 
 @keyframes icons
@@ -332,6 +261,18 @@ header{
   100% {
     .scale(1);
     left: 0;
+  }
+}
+
+#pre-footer{
+  h5{
+    font-family: 'Open Sans', sans-serif;
+    color: #657A8B;
+    font-weight: normal;
+    padding: 0 0 3%;
+  }
+  .btns{
+    padding-bottom: 4%;
   }
 }
 
@@ -447,22 +388,7 @@ header{
   margin-right: 1em;
 }
 
-.geld-verdienen{
-  h4{
-  color: #fff;
-  text-shadow: 1px 1px 0 rgba(0,0,0,0.05);
-  strong{
-    font-weight: bold;
-  }
-  }
-  ul li{
-    color: #fff;
-    text-shadow: 1px 1px 0 rgba(0,0,0,0.05);
-    strong{
-      font-weight: bold;
-    }
-  }
-}
+
 
 .testimonials{
   background: @linkColor;
@@ -509,7 +435,7 @@ header{
 }
 
 footer{
-  background: @grayLighter;
+  background: @blueDark;
   padding: 20px 0 10px;
   font-size: 0.75em;
 }
@@ -646,6 +572,9 @@ input, textarea, .uneditable-input {
    .block{
       width: 1600px;
    }
+  }
+  .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1600px;
   }
 
 }

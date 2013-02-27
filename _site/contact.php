@@ -27,13 +27,14 @@
 
     
   <script src="http://progroep.github.com/max4u/js/vendor/jquery-1.8.2.min.js"></script>
-        <link rel="stylesheet" href="less/style.css">
+        <!--<link rel="stylesheet" href="less/style.css">-->
 
-  <!--<link rel="stylesheet/less" href="less/style.less">
-  <script src="http://progroep.github.com/max4u/js/libs/less-1.3.0.min.js"></script>-->
+  <link rel="stylesheet/less" href="less/style.less">
+  <script src="http://progroep.github.com/max4u/js/libs/less-1.3.0.min.js"></script>
 
   <!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
 
    <script src="http://progroep.github.com/max4u/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
@@ -59,13 +60,13 @@
           <div class="nav-collapse collapse">
             <ul class="nav pull-right">
               <li class="active"><a href="index.html">Home</a></li>
-               <li><a href="bespaarconcept.html">Ons bespaarconcept</a></li>
-              <li><a href="bespaarconcept.html#wie">Over ons</a></li>
-              <li><a href="faq.html">Veelgestelde vragen</a></li>
+               <li><a href="#">Onze werkwijze</a></li>
+              <li><a href="#">Over ons</a></li>
+              <li><a href="#">Veelgestelde vragen</a></li>
           
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
               <li>
-                <a href="contact.php">Contact</a>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -180,7 +181,7 @@
       <div class="row-fluid">
         <div class="span12">
           <p class="pull-right"><a href="#">Back to top</a></p>
-          <p>&copy; 2013 Max4U | Max4u is een onderdeel van Second Opinion BV | AFM nr 12012455</p>
+          <p>&copy; 2013 WOZ experts | WOZ experts is een onderdeel van Florissant Wonen</p>
         </div>
       </div>
     </div>

@@ -206,10 +206,8 @@ h6{
 
 // No rounded corners and borders on buttons
 .btn{
-  border: none;
-  border-radius: 0;
+  border-radius: 5px;
   box-shadow: none;
-  text-shadow: none;
 }
 
 // No rounded corners on breadcrumbs
@@ -397,8 +395,10 @@ nav.main{
 
 @media screen and (min-width: 1500px) {
 
-
   .container{
+    width: 1320px;
+  }
+  .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 1320px;
   }
 

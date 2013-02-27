@@ -11,8 +11,8 @@
 // -------------------------
 @black:                 #000;
 @grayDarker:            #222;
-@grayDark:              #333;
-@gray:                  #555;
+@grayDark:              #272B2E;
+@gray:                  #666;
 @grayLight:             #999;
 @grayLighter:           #eee;
 @white:                 #fff;
@@ -20,10 +20,10 @@
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
+@blue:                 	#39628E;
+@blueDark:              #172631;
 @green:                 #46a546;
-@red:                   #9d261d;
+@red:                   #D75C51;
 @yellow:                #ffc40d;
 @orange:                #f89406;
 @pink:                  #c3325f;
@@ -45,7 +45,7 @@
 // Typography
 // -------------------------
 @sansFontFamily:        "Open Sans", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@serifFontFamily:       'Nunito', sans-serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          16px;
@@ -53,9 +53,9 @@
 @baseLineHeight:        32px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    @altFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsColor:         @grayDark; // empty to use BS default, @textColor
 
 
 // Component sizing
@@ -88,11 +88,11 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #bbb;
 
-@btnPrimaryBackground:              @purple;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 5%);
+@btnPrimaryBackground:              @red;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 1%);
 
-@btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        #2f96b4;
+@btnInfoBackground:                 #657A8B;
+@btnInfoBackgroundHighlight:        spin(@btnInfoBackground, 1%);
 
 @btnSuccessBackground:              #62c462;
 @btnSuccessBackgroundHighlight:     #51a351;
@@ -181,16 +181,16 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    60px;
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                #fff;
-@navbarBorder:                    #fff;
+@navbarBackgroundHighlight:       @blue;
+@navbarBackground:                @blue;
+@navbarBorder:                    darken(@blue, 5%);
 
-@navbarText:                      #777;
-@navbarLinkColor:                 @purple;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @purple;
+@navbarText:                      @white;
+@navbarLinkColor:                 @white;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @white;
 @navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      #fff;
+@navbarLinkBackgroundActive:      transparent;
 
 @navbarBrandColor:                @navbarLinkColor;
 
