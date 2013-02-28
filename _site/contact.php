@@ -60,9 +60,9 @@
           <div class="nav-collapse collapse">
             <ul class="nav pull-right">
               <li class="active"><a href="index.html">Home</a></li>
-               <li><a href="#">Onze werkwijze</a></li>
+               <li><a href="werkwijze.html">Onze werkwijze</a></li>
               <li><a href="#">Over ons</a></li>
-              <li><a href="#">Veelgestelde vragen</a></li>
+              <li><a href="faq.html">Veelgestelde vragen</a></li>
           
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
               <li>
