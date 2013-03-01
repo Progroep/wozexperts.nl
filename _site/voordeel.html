@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Max4U | Eerlijk besparen</title>
+        <title>WOZ Experts | Gratis bezwaar tegen uw WOZ aanslag</title>
         
         <meta name="viewport" content="width=device-width">
 
@@ -78,100 +78,122 @@
 
 
 <div class="contact-header">
+  <div class="container">
+    <a href="" class="btn btn-primary btn-large">direct aanmelden voor woz bezwaar</a>
+  </div>
 </div>
 
-<section class="contact">
-<div class="container">
+<section id="voordeel">
+  <div class="container">
     <div class="row-fluid">
-        <div class="span8">
-         <?php
-                   //init variables
-                   $cf = array();
-                   $sr = false;
-            
-                   if(isset($_SESSION['cf_returndata'])){
-                     $cf = $_SESSION['cf_returndata'];
-                     $sr = true;
-                   }
-            ?>
-
-            <!-- Error & succes displays above the form -->
-            <div id="errors" class="alert alert-error <?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
-                      <a class="close" data-dismiss="alert">×</a>
-
-              <ul>
-                <li id="info">Er zijn problemen met het door u ingevulde formulier:</li>
-
-                <?php 
-                        if(isset($cf['errors']) && count($cf['errors']) > 0) :
-                           foreach($cf['errors'] as $error) :
-                        ?>
-                <li><?php echo $error ?></li>
-                <?php
-                           endforeach;
-                          endif;
-                        ?>
-              </ul>
-            </div>
-
-            <div id="success" class="alert alert-success <?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">
-                      <a class="close" data-dismiss="alert">×</a>
-                <p>Bedankt voor uw bericht. U hoort z.s.m. van ons.</p>
-            </div>
-
-
-            <form method="post" action="process.php" class="form-horizontal">
-                <legend>Contact formulier</legend>
-                <fieldset>
-                    <div class="control-group">
-                        <label for="name" class="control-label">Uw naam: <span class="required">*</span></label>
-                        <div class="controls">
-                            <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="Naam" required autofocus />
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label for="email" class="control-label">Emailadres: <span class="required">*</span></label>
-                        <div class="controls">
-                            <input type="email" id="email" name="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" placeholder="voorbeeld@gmail.com" required />
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label for="telephone" class="control-label">Telefoon: </label>
-                        <div class="controls">
-                            <input type="tel" id="telephone" name="telephone" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['telephone'] : '' ?>" />
-                        </div>
-                    </div>
-                    <div class="control-group">                
-                        <label for="message" class="control-label">Bericht: <span class="required">*</span></label>
-                        <div class="controls">
-                            <textarea id="message" name="message" placeholder="Uw bericht moet minimaal 20 tekens bevatten" required data-minlength="20"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message'] : '' ?></textarea>
-                        </div>
-                    </div>
-                <span id="loading"></span>
-                <input type="submit" value="Verstuur" id="submit-button" class="btn btn-primary btn-large" />
-                <p id="req-field-desc"><span class="required">*</span> Vereist veld</p>
-                </fieldset>
-            </form>
-            <?php unset($_SESSION['cf_returndata']); ?>
-           
-     </div>
-     <div class="span4">
-         <address>
-                  <strong>Max4U</strong><br>
-                  Koraalrood 153<br>
-                  2718 SB Zoetermeer<br>
-                  <abbr title="Telefoon">T:</abbr> 079 -316 16 66
-                </address>
-                 
-                <address>
-                  <strong>Email</strong><br>
-                  <a href="mailto:#">info@max4u.nl</a>
-                </address>
+      <div class="span12">
+        <div class="page-header">
+          <h1>Voorbeeld van uw voordeel</h1>
         </div>
+      </div>
     </div>
+    <div class="row-fluid">
+      <div class="span6">
+        <p class="intro">
+          Op grond van een verlaging van uw WOZ-waarde, krijgt u vermindering van allerlei belastingen.
+          De WOZ-waarde is, zeker bij box 3 vastgoed, van invloed op uw fiscaal vermogen en daarmee
+          op tal van toeslagen, waaronder bij voorbeeld de Kinderopvang-toeslag, en diverse andere
+          heffingen en toeslagen.
+        </p>
+        <p><em>Uw precieze situatie is natuurlijk alleen aan u en de fiscus bekend, daarom berekent onderstaand
+        rekenvoorbeeld alleen de verminderingen, waar u zeker recht op heeft.</em></p>
+
+        <h4>Rekenvoorbeeld</h4>
+        <p>Een hoekwoning met een WOZ-waarde van € 450.000. In dit voorbeeld gaan we uit van een
+          waardeverlaging van € 35.000,-
+        </p>
+      </div>
+      <div class="span6">
+      	<img src="http://2.s3.envato.com/files/7394202/YuriCT10Zeke-182.jpg">
+      </div>
+    </div>
+    <div class="row-fluid">
+    	<div class="span12">
+    		
+        <h3>Uw totale financiële voordeel in dit voorbeeld is minimaal € 278,- per jaar.</h3>
+        <table class="table">
+          <tr>
+            <td>WOZ-waarde</td>
+            <td>€ 450.000,-</td>
+          </tr>
+          <tr>
+            <td>Tarief OZB is percentage van de WOZ-waarde</td>
+            <td>0,2108%</td>
+          </tr>
+          <tr>
+            <td>Hypotheekschuld</td>
+            <td>€ 400.000,-</td>
+          </tr>
+          <tr>
+            <td>Hypotheekrente</td>
+            <td>5%</td>
+          </tr>
+          <tr>
+            <td>Schaal inkomstenbelasting</td>
+            <td>52%</td>
+          </tr>
+          <tr>
+            <td>WOZ-waarde na bezwaar</td>
+            <td>€ 415.000</td>
+          </tr>
+          <tr>
+            <td>Eigenwoningforfait percentage</td>
+            <td>0,6%</td>
+          </tr>
+        </table>
+        <h4>Gemeentelijke belasting</h4>
+        <table class="table">
+          <tr>
+            <td>Aanslag OZB voor bezwaar</td>
+            <td>€ 948, ((€ 450.000:100) * 0,2108%)</td>
+          </tr>
+          <tr>
+            <td>Aanslag OZB na bezwaar</td>
+            <td>€ 874, ((€ 415.000:100) * 0,2108%)</td>
+          </tr>
+          <tr class="info">
+            <td><strong>Uw voordeel</strong></td>
+            <td><strong>€ 74</strong></td>
+          </tr>
+        </table>
+        <h4>Inkomstenbelasting</h4>
+          <table class="table">
+          <tr>
+            <td>Hypotheekrente per jaar</td>
+            <td>€ 20.000,-</td>
+          </tr>
+          <tr>
+            <td>Eigenwoningforfait voor bezwaar</td>
+            <td>€ 2.700 ((€ 450.000:100) * 0,6%)</td>
+          </tr>
+          <tr>
+            <td>Eigenwoningforfait na bezwaar</td>
+            <td>€ 2.490 ((€ 415.000:100) * 0,6%)</td>
+          </tr>
+          <tr class="info">
+            <td><strong>Uw voordeel</strong></td>
+            <td><strong>€ 210</strong></td>
+          </tr>
+        </table>
+
+        <h3 class="intro">
+          Het totale voordeel voor de ozb en inkomstenbelasting is derhalve <strong>284 euro</strong> (€ 74 + € 210).
+        </h3>
+        <p>Bovenstaande fiscale voordelen zijn de belangrijkste voordelen, echter hiernaast ontvangt u
+        ook nog een gedeeltelijke teruggave van de waterschapslasten. Een aantal gemeenten gebruikt
+        de WOZ-waarde tevens voor de berekening van de rioolheffing die door de verlaagde WOZ-
+        waarde eveneens zal dalen. Zoals reeds eerder gesteld zijn er ook nog mogelijke voordelen
+        voortvloeiende uit een toename van (fiscale) toelagen door een verlaagd fiscaal vermogen.
+      </p>
+    </div>
+  </div>
 </div>
 </section>
-
 
 
 <section id="pre-footer">
