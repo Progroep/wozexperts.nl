@@ -1,3 +1,5 @@
+<?php session_start() ?>  
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -7,7 +9,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Max4U | Eerlijk besparen</title>
+        <title>WOZexperts | Kosteloos WOZ bezwaar</title>
         
         <meta name="viewport" content="width=device-width">
 
@@ -66,7 +68,7 @@
           
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
               <li>
-                <a href="#">contact</a>
+                <a href="contact.php">contact</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -78,12 +80,21 @@
 
 
 <div class="contact-header">
+  <div class="container">
+    <a href="aanmelden.php" class="btn btn-primary btn-large">direct aanmelden voor woz bezwaar</a>
+  </div>
 </div>
 
 <section class="contact">
 <div class="container">
     <div class="row-fluid">
         <div class="span8">
+          <h2>We helpen u graag verder</h2>
+          <p>Om zo snel mogelijk een antwoord op uw vraag te geven hebben we een aantal informatiebronnen samengesteld:
+            <a href="faq.html">Veelgestelde vragen</a> </br>
+            Als u er niet uitkomt kunt u via onderstaand formulier contact met ons opnemen. Als we er echt niet uitkomen bellen we u.
+          </p>
+
          <?php
                    //init variables
                    $cf = array();
@@ -156,16 +167,17 @@
            
      </div>
      <div class="span4">
+        <img src="http://0.s3.envato.com/files/4900644/andresr21212.jpg">
          <address>
-                  <strong>Max4U</strong><br>
-                  Koraalrood 153<br>
-                  2718 SB Zoetermeer<br>
+                  <strong>De WOZexperts</strong><br>
+                  Van Ostadelaan 91<br>
+                  1701 LH Heerhughowaard SB Zoetermeer<br>
                   <abbr title="Telefoon">T:</abbr> 079 -316 16 66
                 </address>
                  
                 <address>
                   <strong>Email</strong><br>
-                  <a href="mailto:#">info@max4u.nl</a>
+                  <a href="mailto:#">info@dewozexperts.nl</a>
                 </address>
         </div>
     </div>
