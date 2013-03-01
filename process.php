@@ -40,15 +40,15 @@ if( isset($_POST) ){
     }
     //send email if all is ok
     if($formok){
-        $headers = "From: info@max4u.nl" . "\r\n";
+        $headers = "From: info@dewozexperts.nl" . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $emailbody = "<p>Nieuwe informatieaanvraag via Max4u.nl</p>
+        $emailbody = "<p>Nieuwe informatieaanvraag via dewozexperts.nl</p>
                       <p><strong>Naam: </strong> {$name} </p>
                       <p><strong>Email Adres: </strong> {$email} </p>
                       <p><strong>Telefoon: </strong> {$telephone} </p>
                       <p><strong>Bericht: </strong> {$message} </p>
                       <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
-        mail("info@max4u.nl","Nieuwe infoaanvraag Max4U.nl",$emailbody,$headers);
+        mail("lex@gouwestadmm.nl","Nieuwe infoaanvraag deWOZexperts.nl",$emailbody,$headers);
     }
     //what we need to return back to our form
     $returndata = array(

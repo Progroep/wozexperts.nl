@@ -9,7 +9,7 @@ tagline:
 <section>
     <div class="container">
         <div class="row-fluid">
-            <div class="span12">
+            <div class="span8">
 
 <?php
 
@@ -85,7 +85,7 @@ tagline:
 <input name="form" type="hidden" value="form1">
 <h1>Vul a.u.b. het onderstaande formulier in</h1>
 ' . $sFormError . '
-<table border="0" cellpadding="3" cellspacing="0"><tr>
+<table class="table"><tr>
 <td align="left" valign="top">U wilt zich inschrijven als</td>
 <td align="left" valign="top"><select name="field_1"><option' . ((strcmp($field_1, 'particulier met meerdere woningen') === 0) ? ' selected="selected"' : '') . ' value="particulier met meerdere woningen">particulier met meerdere woningen</option><option' . ((strcmp($field_1, 'bedrijf of instelling') === 0) ? ' selected="selected"' : '') . ' value="bedrijf of instelling">bedrijf of instelling</option></select></td>
 </tr>
@@ -131,15 +131,15 @@ tagline:
 </tr>
 <tr>
 <td align="left" valign="top">&nbsp;</td>
-<td align="left" valign="top"><input type="submit" value="Verzenden"></td>
+<td align="left" valign="top"><input type="submit" class="btn btn-large btn-primary" value="Verzenden"></td>
 </table>
 </form>';
     }
     else // Send form
     {
-        $mail_to = 'uw@email.adres';
-        $mail_from = 'info@uwdomeinnaam.nl';
-        $mail_subject = 'Formuliergegevens van www.uwdomeinnaam.nl';
+        $mail_to = 'lex@gouwestadmm.nl';
+        $mail_from = 'info@dewozexperts.nl';
+        $mail_subject = 'Formuliergegevens van dewozexperts.nl';
         $mail_message = 'Formuliergegevens: ' . LF . LF 
 . 'U wilt zic h inschrijven als: ' . $field_1 . LF
 . 'Volledige naam:         ' . $field_2 . LF
@@ -164,6 +164,9 @@ tagline:
 
 ?>
 
+            </div>
+            <div class="span4">
+                <img src="http://0.s3.envato.com/files/4900644/andresr21212.jpg">
             </div>
         </div>
     </div>
