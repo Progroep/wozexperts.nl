@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>WOZ Experts | </title>
+        <title>WOZcontroledienst | </title>
         
         <meta name="viewport" content="width=device-width">
 
@@ -27,10 +27,10 @@
 
     
   <script src="http://progroep.github.com/max4u/js/vendor/jquery-1.8.2.min.js"></script>
-        <!--<link rel="stylesheet" href="less/style.css">-->
+  <link rel="stylesheet" href="less/style.css">
 
-  <link rel="stylesheet/less" href="less/style.less">
-  <script src="http://progroep.github.com/max4u/js/libs/less-1.3.0.min.js"></script>
+  <!--<link rel="stylesheet/less" href="less/style.less">
+  <script src="http://progroep.github.com/max4u/js/libs/less-1.3.0.min.js"></script>-->
 
   <!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
@@ -212,8 +212,8 @@
     else // Send form
     {
         $mail_to = 'lex@gouwestadmm.nl';
-        $mail_from = 'info@dewozexperts.nl';
-        $mail_subject = 'Formuliergegevens van dewozexperts.nl';
+        $mail_from = 'info@wozcontroledienst.nl';
+        $mail_subject = 'Formuliergegevens van wozcontroledienst.nl';
         $mail_message = 'Formuliergegevens: ' . LF . LF 
 . 'U wilt zic h inschrijven als: ' . $field_1 . LF
 . 'Volledige naam:         ' . $field_2 . LF
@@ -240,7 +240,7 @@
 
             </div>
             <div class="span4">
-                <img src="http://0.s3.envato.com/files/4900644/andresr21212.jpg">
+                <img src="http://www.gouwestad.com/wozexperts/img/contact.jpg">
             </div>
         </div>
     </div>
@@ -269,7 +269,7 @@
         <a href="aanmelden.php" class="btn btn-primary btn-large btn-block">direct aanmelden</a>
       </div>
       <div class="span4">
-        <a href="" class="btn btn-info btn-large btn-block">lees meer over onze werkwijze</a>
+        <a href="werkwijze.html" class="btn btn-info btn-large btn-block">lees meer over onze werkwijze</a>
       </div>
     </div>
   </div>
@@ -282,7 +282,7 @@
       <div class="row-fluid">
         <div class="span12">
           <p class="pull-right"><a href="#">Back to top</a></p>
-          <p>&copy; 2013 WOZ experts | WOZ experts is een onderdeel van Florissant Wonen</p>
+          <p>&copy; 2013 WOZcontroledienst | WOZcontroledienst is een onderdeel van Florissant Wonen</p>
         </div>
       </div>
     </div>
@@ -322,7 +322,7 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38678896-1']);
+  _gaq.push(['_setAccount', 'UA-39007202-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {

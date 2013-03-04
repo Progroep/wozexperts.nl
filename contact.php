@@ -94,7 +94,7 @@ tagline: Kosteloos WOZ bezwaar
      <div class="span4">
         <img src="http://0.s3.envato.com/files/4900644/andresr21212.jpg">
          <address>
-                  <strong>De WOZexperts</strong><br>
+                  <strong>WOZcontroledienst</strong><br>
                   Van Ostadelaan 91<br>
                   1701 LH Heerhughowaard SB Zoetermeer<br>
                   <abbr title="Telefoon">T:</abbr> 079 -316 16 66
@@ -102,7 +102,7 @@ tagline: Kosteloos WOZ bezwaar
                  
                 <address>
                   <strong>Email</strong><br>
-                  <a href="mailto:#">info@dewozexperts.nl</a>
+                  <a href="mailto:#">info@wozcontroledienst.nl</a>
                 </address>
         </div>
     </div>

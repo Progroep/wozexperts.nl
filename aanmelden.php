@@ -1,6 +1,6 @@
 ---
 layout: default
-title: WOZ Experts
+title: WOZcontroledienst
 tagline: 
 ---
 <div class="contact-header">
@@ -138,8 +138,8 @@ tagline:
     else // Send form
     {
         $mail_to = 'lex@gouwestadmm.nl';
-        $mail_from = 'info@dewozexperts.nl';
-        $mail_subject = 'Formuliergegevens van dewozexperts.nl';
+        $mail_from = 'info@wozcontroledienst.nl';
+        $mail_subject = 'Formuliergegevens van wozcontroledienst.nl';
         $mail_message = 'Formuliergegevens: ' . LF . LF 
 . 'U wilt zic h inschrijven als: ' . $field_1 . LF
 . 'Volledige naam:         ' . $field_2 . LF
@@ -166,7 +166,7 @@ tagline:
 
             </div>
             <div class="span4">
-                <img src="http://0.s3.envato.com/files/4900644/andresr21212.jpg">
+                <img src="http://www.gouwestad.com/wozexperts/img/contact.jpg">
             </div>
         </div>
     </div>
