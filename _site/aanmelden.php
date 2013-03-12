@@ -118,7 +118,7 @@
     }
 
     // Default values
-    $field_1 = 'Paticulier met 1 woning';
+    $field_1 = 'Particulier met 1 woning';
     $field_2 = '';
     $field_3 = '';
     $field_4 = '';
@@ -137,14 +137,14 @@
     if(empty($_POST['form']) == false)
     {
         $field_1 = getPost('field_1', true);
-        if(in_array($field_1, array('particulier met meerdere woningen', 'bedrijf of instelling')) == false) { $sFormError = 'Selecteer a.u.b. een geldige waarde.'; }        $field_2 = getPost('field_2', true);
+        if(in_array($field_1, array('Particulier met 1 woning', 'particulier met meerdere woningen', 'bedrijf of instelling')) == false) { $sFormError = 'Selecteer a.u.b. een geldige waarde.'; }        $field_2 = getPost('field_2', true);
         if(strlen($field_2) == 0) { $sFormError = 'Vul a.u.b. alle verplichte velden in.'; }
         $field_3 = getPost('field_3', true);
         if(strlen($field_3) == 0) { $sFormError = 'Vul a.u.b. alle verplichte velden in.'; }
         $field_4 = getPost('field_4', true);
         if(strlen($field_4) == 0) { $sFormError = 'Vul a.u.b. alle verplichte velden in.'; }
         $field_5 = getPost('field_5', true);
-        if(in_array($field_5, array('ik ben dit jaar eigenaar geworden', 'mijn bezwaar is afgewezen')) == false) { $sFormError = 'Selecteer a.u.b. een geldige waarde.'; }        $field_6 = getPost('field_6', true);
+        if(in_array($field_5, array('Bezwaar tegen WOZ-waarde', 'ik ben dit jaar eigenaar geworden', 'mijn bezwaar is afgewezen')) == false) { $sFormError = 'Selecteer a.u.b. een geldige waarde.'; }        $field_6 = getPost('field_6', true);
         $field_7 = getPost('field_7', true);
         $field_8 = getPost('field_8', true);
         $field_9 = getPost('field_9', true);
@@ -172,7 +172,7 @@
 <td align="left" valign="top"><input name="field_3" type="text" value="' . htmlentities($field_3) . '"></td>
 </tr>
 <tr>
-<td align="left" valign="top">Telefoonnummer</td>
+<td align="left" valign="top">Telefoonnummer *</td>
 <td align="left" valign="top"><input name="field_4" type="text" value="' . htmlentities($field_4) . '"></td>
 </tr>
 <tr>
@@ -207,7 +207,7 @@
     }
     else // Send form
     {
-        $mail_to = 'lex@gouwestadmm.nl';
+        $mail_to = 'info@wozcontroledienst.nl';
         $mail_from = 'info@wozcontroledienst.nl';
         $mail_subject = 'Formuliergegevens van wozcontroledienst.nl';
         $mail_message = 'Formuliergegevens: ' . LF . LF 
@@ -236,7 +236,7 @@
 
             </div>
             <div class="span4">
-                <img src="http://www.gouwestad.com/wozexperts/img/contact.jpg">
+                <img src="../img/contact.jpg">
             </div>
         </div>
     </div>
