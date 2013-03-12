@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>WOZ Experts | </title>
+        <title>WOZcontroledienst | </title>
         
         <meta name="viewport" content="width=device-width">
 
@@ -27,10 +27,10 @@
 
     
   <script src="http://progroep.github.com/max4u/js/vendor/jquery-1.8.2.min.js"></script>
-        <!--<link rel="stylesheet" href="less/style.css">-->
+  <link rel="stylesheet" href="less/style.css">
 
-  <link rel="stylesheet/less" href="less/style.less">
-  <script src="http://progroep.github.com/max4u/js/libs/less-1.3.0.min.js"></script>
+  <!--<link rel="stylesheet/less" href="less/style.less">
+  <script src="http://progroep.github.com/max4u/js/libs/less-1.3.0.min.js"></script>-->
 
   <!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
@@ -155,13 +155,13 @@
     // Show form
     if(empty($_POST['form']) || $sFormError)
     {
-        $sHtml .= '<form action="" method="post">
+       $sHtml .= '<form action="" method="post">
 <input name="form" type="hidden" value="form1">
 <h1>Vul a.u.b. het onderstaande formulier in</h1>
 ' . $sFormError . '
 <table class="table"><tr>
 <td align="left" valign="top">U wilt zich inschrijven als</td>
-<td align="left" valign="top"><select name="field_1"><option' . ((strcmp($field_1, 'particulier met meerdere woningen') === 0) ? ' selected="selected"' : '') . ' value="particulier met meerdere woningen">particulier met meerdere woningen</option><option' . ((strcmp($field_1, 'bedrijf of instelling') === 0) ? ' selected="selected"' : '') . ' value="bedrijf of instelling">bedrijf of instelling</option></select></td>
+<td align="left" valign="top"><select name="field_1"><option' . ((strcmp($field_1, 'Particulier met 1 woning') === 0) ? ' selected="selected"' : '') . ' value="Particulier met 1 woning">Particulier met 1 woning</option><option' . ((strcmp($field_1, 'particulier met meerdere woningen') === 0) ? ' selected="selected"' : '') . ' value="particulier met meerdere woningen">particulier met meerdere woningen</option><option' . ((strcmp($field_1, 'bedrijf of instelling') === 0) ? ' selected="selected"' : '') . ' value="bedrijf of instelling">bedrijf of instelling</option></select></td>
 </tr>
 <tr>
 <td align="left" valign="top">Volledige naam *</td>
@@ -172,36 +172,32 @@
 <td align="left" valign="top"><input name="field_3" type="text" value="' . htmlentities($field_3) . '"></td>
 </tr>
 <tr>
-<td align="left" valign="top">Telefoonnummer *</td>
+<td align="left" valign="top">Telefoonnummer</td>
 <td align="left" valign="top"><input name="field_4" type="text" value="' . htmlentities($field_4) . '"></td>
 </tr>
 <tr>
 <td align="left" valign="top">Doel van de aanvraag</td>
-<td align="left" valign="top"><select name="field_5"><option' . ((strcmp($field_5, 'ik ben dit jaar eigenaar geworden') === 0) ? ' selected="selected"' : '') . ' value="ik ben dit jaar eigenaar geworden">ik ben dit jaar eigenaar geworden</option><option' . ((strcmp($field_5, 'mijn bezwaar is afgewezen') === 0) ? ' selected="selected"' : '') . ' value="mijn bezwaar is afgewezen">mijn bezwaar is afgewezen</option></select></td>
+<td align="left" valign="top"><select name="field_5"><option' . ((strcmp($field_5, 'Bezwaar tegen WOZ-waarde') === 0) ? ' selected="selected"' : '') . ' value="Bezwaar tegen WOZ-waarde">Bezwaar tegen WOZ-waarde</option><option' . ((strcmp($field_5, 'ik ben dit jaar eigenaar geworden') === 0) ? ' selected="selected"' : '') . ' value="ik ben dit jaar eigenaar geworden">ik ben dit jaar eigenaar geworden</option><option' . ((strcmp($field_5, 'mijn bezwaar is afgewezen') === 0) ? ' selected="selected"' : '') . ' value="mijn bezwaar is afgewezen">mijn bezwaar is afgewezen</option></select></td>
 </tr>
 <tr>
 <td align="left" valign="top">Aanschafwaarde</td>
 <td align="left" valign="top"><input name="field_6" type="text" value="' . htmlentities($field_6) . '"></td>
 </tr>
 <tr>
-<td align="left" valign="top">Aanschafdatum</td>
+<td align="left" valign="top">Adres</td>
 <td align="left" valign="top"><input name="field_7" type="text" value="' . htmlentities($field_7) . '"></td>
 </tr>
 <tr>
-<td align="left" valign="top">Adres</td>
+<td align="left" valign="top">Postcode</td>
 <td align="left" valign="top"><input name="field_8" type="text" value="' . htmlentities($field_8) . '"></td>
 </tr>
 <tr>
-<td align="left" valign="top">Postcode</td>
+<td align="left" valign="top">Plaats</td>
 <td align="left" valign="top"><input name="field_9" type="text" value="' . htmlentities($field_9) . '"></td>
 </tr>
 <tr>
-<td align="left" valign="top">Plaats</td>
-<td align="left" valign="top"><input name="field_10" type="text" value="' . htmlentities($field_10) . '"></td>
-</tr>
-<tr>
 <td align="left" valign="top">Toelichting</td>
-<td align="left" valign="top"><textarea name="field_11">' . htmlentities($field_11) . '</textarea></td>
+<td align="left" valign="top"><textarea name="field_10">' . htmlentities($field_10) . '</textarea></td>
 </tr>
 <tr>
 <td align="left" valign="top">&nbsp;</td>
@@ -212,8 +208,8 @@
     else // Send form
     {
         $mail_to = 'lex@gouwestadmm.nl';
-        $mail_from = 'info@dewozexperts.nl';
-        $mail_subject = 'Formuliergegevens van dewozexperts.nl';
+        $mail_from = 'info@wozcontroledienst.nl';
+        $mail_subject = 'Formuliergegevens van wozcontroledienst.nl';
         $mail_message = 'Formuliergegevens: ' . LF . LF 
 . 'U wilt zic h inschrijven als: ' . $field_1 . LF
 . 'Volledige naam:         ' . $field_2 . LF
@@ -240,7 +236,7 @@
 
             </div>
             <div class="span4">
-                <img src="http://0.s3.envato.com/files/4900644/andresr21212.jpg">
+                <img src="http://www.gouwestad.com/wozexperts/img/contact.jpg">
             </div>
         </div>
     </div>
@@ -269,7 +265,7 @@
         <a href="aanmelden.php" class="btn btn-primary btn-large btn-block">direct aanmelden</a>
       </div>
       <div class="span4">
-        <a href="" class="btn btn-info btn-large btn-block">lees meer over onze werkwijze</a>
+        <a href="werkwijze.html" class="btn btn-info btn-large btn-block">lees meer over onze werkwijze</a>
       </div>
     </div>
   </div>
@@ -282,7 +278,7 @@
       <div class="row-fluid">
         <div class="span12">
           <p class="pull-right"><a href="#">Back to top</a></p>
-          <p>&copy; 2013 WOZ experts | WOZ experts is een onderdeel van Florissant Wonen</p>
+          <p>&copy; 2013 WOZcontroledienst | WOZcontroledienst is een onderdeel van Florissant Wonen</p>
         </div>
       </div>
     </div>
@@ -322,7 +318,7 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38678896-1']);
+  _gaq.push(['_setAccount', 'UA-39007202-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
