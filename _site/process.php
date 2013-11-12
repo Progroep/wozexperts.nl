@@ -40,9 +40,9 @@ if( isset($_POST) ){
     }
     //send email if all is ok
     if($formok){
-        $headers = "From: info@dewozexperts.nl" . "\r\n";
+        $headers = "From: info@wozcontroledienst.nl" . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $emailbody = "<p>Nieuwe informatieaanvraag via dewozexperts.nl</p>
+        $emailbody = "<p>Nieuwe informatieaanvraag via wozcontroledienst.nl</p>
                       <p><strong>Naam: </strong> {$name} </p>
                       <p><strong>Email Adres: </strong> {$email} </p>
                       <p><strong>Telefoon: </strong> {$telephone} </p>
